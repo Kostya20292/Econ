@@ -1,0 +1,113 @@
+.header
+  padding-top: 17px
+  &-top
+    display: flex
+    align-items: center
+    margin: 0 0 45px
+    &__logo
+      margin-right: 72px
+    &__form
+      width: 851px
+      height: 54px
+      background: url("../img/search.svg") no-repeat left 26px center
+      background-color: #F7F7F7
+      padding-left: 66px
+      margin-right: 67px
+      font-size: 15px
+      line-height: 19px
+      &-input
+        width: 100%
+        height: 100%
+        background-color: transparent
+        border: none
+        outline: none
+    &__list
+      display: flex
+      list-style: none
+      margin: 0
+      padding: 0
+      &-item
+        margin-right: 32px
+        &:last-child
+          margin-right: 0
+      &-link
+        text-decoration: none
+  
+.burger-menu__button
+  background-color: transparent
+  border: none
+  padding: 0
+  margin: 0
+  margin-right: 76px
+  cursor: pointer
+  
+.goods
+  display: flex
+  position: relative
+  &__counter
+    position: absolute
+    bottom: 21px
+    left: 21px
+    padding: 2px 5px
+    background: #1DBCD2
+    text-align: center
+    border-radius: 50%
+    font-weight: bold
+    font-size: 10px
+    line-height: 13px
+    width: 16px
+    height: 16px
+    color: #fff
+
+.header__contacts
+  display: flex
+  list-style: none
+  justify-content: space-between
+  padding: 0
+  margin: 0
+  margin-bottom: 29px
+  &-item
+    display: flex
+    align-items: center
+  &-link
+    text-decoration: none
+    font-size: 18px
+    line-height: 23px
+    color: #2B2E34
+    margin-left: 15px
+    width: 100%
+
+.header-footer
+  padding: 82px 0
+  background: url("../img/banner.jpg") no-repeat
+  background-size: cover
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__text
+    color: #FFFFFF
+    &-title
+      font-size: 42px
+      line-height: 53px
+      +semibold
+    &-description
+      font-size: 18px
+      line-height: 27px
+      width: 579px
+      margin: 0
+      margin-top: 20px
+  &__button
+    padding: 28px 50px
+    height: 78px
+    background: #FFFFFF
+    border: none
+    border-radius: 2px
+    font-weight: 500
+    font-size: 18px
+    line-height: 23px
+    letter-spacing: 0.02em
+    color: #2B2E34
+    +medium
+    &-more
+      margin-right: 36px

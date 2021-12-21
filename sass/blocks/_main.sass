@@ -1,0 +1,168 @@
+.main
+  background-color: #E5E5E5
+.page
+  font-size: 15px
+  line-height: 19px
+  color: #858A93
+  display: block
+  margin-bottom: 65px
+  padding-top: 46px
+  &__active
+    color: #2B2E34
+    +semibold
+    padding-left: 5px
+.machinery
+  &__wrapper
+    display: flex
+    justify-content: space-between
+  &__title
+    font-size: 40px
+    line-height: 53px
+    color: #2B2E34
+    display: block
+    margin-bottom: 58px
+    +semibold
+    &-counter
+      display: none
+  &__goods
+    &-title
+      display: flex
+      padding: 32px 40px
+      background-color: #f4f4f4
+      align-items: center
+      justify-content: space-between
+      margin-bottom: 35px
+    &-counter
+      font-size: 18px
+      line-height: 23px
+      color: #858A93
+      +semibold
+      > span
+        color: #2B2E34
+      &-mobile
+        display: none 
+    &-cost
+      font-size: 16px
+      line-height: 20px
+      letter-spacing: 0.02em
+      color: #7E838C
+      > span
+        color: #2B2E34
+        margin-right: 20px
+        +semibold
+      &-mobile
+        display: none
+  &__cards
+    display: flex 
+    flex-wrap: wrap
+    justify-content: space-between
+    padding-bottom: 190px
+    &-all
+      display: none  
+  &__card
+    background: #FFFFFF
+    border-radius: 2px
+    width: 354px
+    // margin-right: 35px
+    margin-bottom: 35px
+    &:nth-child(3n)
+      margin-right: 0
+    &-image
+      width: 241px
+      height: 293px
+      display: block
+      margin: 6px 56px 38px
+    &-title
+      font-size: 16px
+      line-height: 25px
+      color: #2B2E34
+      margin: 0 28px 18px
+    &-info
+      display: flex
+      justify-content: space-between
+      align-items: center
+    &-costs
+      display: flex
+      align-items: center
+    &-cost
+      font-weight: 600
+      font-size: 20px
+      line-height: 25px
+      color: #2B2E34
+      margin-left: 28px
+      margin-right: 27px
+      +semibold
+      sup
+        font-size: 13px
+        +regular
+      &-old
+        position: relative
+        font-size: 15px
+        line-height: 14px
+        color: #7E838C
+        &:before
+          content: ""
+          display: inline-block
+          width: 64px
+          background-color: #f31b4f
+          border: 1.2px solid transparent
+          position: absolute
+          transform: rotate(-9.99deg)
+          bottom: 7px
+          left: -13px
+    &-buy
+      width: 82px
+      height: 82px
+      padding: 28px
+      border: none
+      background-color: #38D3E8
+      cursor: pointer
+      text-align: right
+    &-sale
+      position: relative
+.sale
+  position: absolute
+  top: 0
+  left: 0
+  display: flex
+  align-items: center
+  width: 110px
+  padding: 8px 19px
+  background: #F31B4F
+  border-radius: 2px 0px 0px 0px
+  color: #fff
+  > img
+    width: 14px
+    height: 15px
+    margin-right: 12px
+  > span
+    font-size: 15px
+    line-height: 19px
+    opacity: 0.9
+    
+.text
+  width: 1095px
+  margin: 0 auto
+  padding-bottom: 190px
+  span
+    display: block
+    font-size: 35px
+    font-weight: 700
+    line-height: 44px
+    color: #2B2E34
+    margin-bottom: 48px 
+    &:last-of-type
+      font-size: 22px
+      padding-top: 25px
+      margin-bottom: 20px
+      +semibold
+  p
+    font-weight: 300
+    font-size: 16px
+    line-height: 26px
+    color: #2B2E34
+    &:nth-child(2)
+      margin-bottom: 25px
+    &:last-of-type
+      margin-top: 25px
+      

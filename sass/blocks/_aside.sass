@@ -1,0 +1,62 @@
+.aside
+  background-color: #f4f4f4
+  margin-right: 52px
+  padding: 31px 30px 46px 30px
+  height: 100%
+  &__header
+    display: flex
+    justify-content: space-between
+    margin-bottom: 59px
+    &-title
+      font-size: 22px
+      font-weight: 700
+      line-height: 28px
+      color: #2B2E34
+      margin-right: 93px
+    &-reset
+      display: flex
+      align-items: center
+      font-size: 16px
+      line-height: 20px
+      color: #7E838C
+      img
+        margin-left: 14px
+  &__accord
+    margin-bottom: 60px
+    &:last-child
+      margin-bottom: 0
+    &-title
+      display: flex
+      justify-content: space-between
+      font-size: 18px
+      font-weight: 700
+      line-height: 23px
+      color: #2B2E34
+      margin-bottom: 26px
+      cursor: pointer
+      img
+        transform: rotate(90deg)
+        transition: 0.5s ease-in-out
+    &-checkbox
+      font-size: 15px
+      line-height: 19px
+      color: #2B2E34
+      margin-bottom: 16px
+    &-wrapper
+      height: 0
+      overflow: hidden
+      transition: 0.5s ease-in-out
+    &.active .aside__accord-wrapper
+      height: 124px
+    &.active .aside__accord-title > img
+      transform: rotate(0)
+  &__mobile
+    display: none
+    &-footer
+      display: flex
+
+      
+
+                    
+                    
+                    

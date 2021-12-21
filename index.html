@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Экон Урфо</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-top">
+          <div class="burger-menu">
+            <button class="burger-menu__button">
+              <img src="img/burger-menu.svg" alt="Меню бургер" />
+            </button>
+          </div>
+          <a class="header-top__logo" href="#">
+            <picture class="header-top__image">
+              <source srcset="img/logo-mobile.svg" media="(max-width: 650px)" />
+              <img
+                class="header-top__image"
+                src="img/logo.svg"
+                alt="Логотип Экон Урфо"
+              />
+            </picture>
+          </a>
+          <form action="#" class="header-top__form">
+            <input
+              type="search"
+              class="header-top__form-input"
+              placeholder="Поиск товаров.."
+            />
+          </form>
+          <ul class="header-top__list">
+            <li class="header-top__list-item">
+              <a href="#" class="header-top__list-link">
+                <picture>
+                  <source
+                    srcset="img/phone-mobile.svg"
+                    media="(max-width: 650px)"
+                  />
+                  <img src="img/car.svg" alt="Доставка" />
+                </picture>
+              </a>
+            </li>
+            <li class="header-top__list-item">
+              <a href="#" class="header-top__list-link">
+                <img src="img/account.svg" alt="Личный кабинет" />
+              </a>
+            </li>
+            <li class="header-top__list-item goods">
+              <a href="#" class="header-top__list-link">
+                <img src="img/basket.svg" alt="Корзина товаров" />
+                <div class="goods__counter">3</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <ul class="header__contacts">
+          <li class="header__contacts-item">
+            <img src="img/location.svg" alt="Местоположение" />
+            <a class="header__contacts-link" href="#">Екатеринбург</a>
+          </li>
+          <li class="header__contacts-item">
+            <img src="img/phone.svg" alt="Телефон" />
+            <a class="header__contacts-link" href="#">+7 (495) 506-36-50</a>
+          </li>
+          <li class="header__contacts-item">
+            <img src="img/mail.svg" alt="Email" />
+            <a class="header__contacts-link" href="#">office@uconerfo.ru</a>
+          </li>
+          <li class="header__contacts-item">
+            <img src="img/pen.svg" alt="Заявка на расчет" />
+            <a class="header__contacts-link" href="#">Заявка на расчет</a>
+          </li>
+          <li class="header__contacts-item">
+            <img src="img/headphones.svg" alt="Контакты" />
+            <a class="header__contacts-link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </div>
+      <div class="header-footer">
+        <div class="container header-footer__wrapper">
+          <div class="header-footer__text">
+            <span class="header-footer__text-title"
+              >Дозаторы и антисептики</span
+            >
+            <p class="header-footer__text-description">
+              Устанавливаются в общественных местах для предотвращения
+              распространения вирусов микробов
+            </p>
+          </div>
+          <button class="header-footer__button">
+            <img class="header-footer__button-more" src="img/more.svg" alt="" />
+            Подробнее
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="pages">
+        <div class="container">
+          <span class="page">
+            Главная /
+            <span class="page__active">Отопительное оборудование</span>
+          </span>
+        </div>
+      </div>
+      <section class="machinery">
+        <div class="container">
+          <span class="machinery__title">Отопительное оборудование</span>
+          <span class="machinery__title-counter">
+            2394 <span>товаров</span>
+          </span>
+          <div class="machinery__wrapper">
+            <aside class="aside">
+              <div class="aside__header">
+                <span class="aside__header-title">Фильтры</span>
+                <span class="aside__header-reset"
+                  >Сбросить
+                  <img src="img/reset.svg" alt="Сбросить фильтры" />
+                </span>
+              </div>
+              <div class="aside__accords">
+                <div class="aside__accord">
+                  <span class="aside__accord-title">
+                    Отопительное оборудование
+                    <img src="img/arrow-down.svg" alt="Стрелочка вниз" />
+                  </span>
+                  <div class="aside__accord-wrapper">
+                    <div class="aside__accord-checkbox">
+                      <input type="checkbox" id="checkbox-type-1" />
+                      <label for="checkbox-type-1">Радиаторы отопления</label>
+                    </div>
+                    <div class="aside__accord-checkbox">
+                      <input type="checkbox" id="checkbox-type-2" />
+                      <label for="checkbox-type-2">Конвекторы отопления</label>
+                    </div>
+                    <div class="aside__accord-checkbox">
+                      <input type="checkbox" id="checkbox-type-3" />
+                      <label for="checkbox-type-3">Полотенцесушители</label>
+                    </div>
+                    <div class="aside__accord-checkbox">
+                      <input type="checkbox" id="checkbox-type-4" />
+                      <label for="checkbox-type-4"
+                        >Арматура для радиаторов
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="aside__accord">
+                  <span class="aside__accord-title">
+                    Бренд
+                    <img src="img/arrow-down.svg" alt="Стрелочка вниз" />
+                  </span>
+                  <div class="aside__accord-wrapper">
+                    <div class="aside__accord-checkbox">
+                      <input type="checkbox" id="checkbox-brand-1" />
+                      <label for="checkbox-brand-1">Purmo</label>
+                    </div>
+                    <div class="aside__accord-checkbox">
+                      <input type="checkbox" id="checkbox-brand-2" />
+                      <label for="checkbox-brand-2">Irsap</label>
+                    </div>
+                    <div class="aside__accord-checkbox">
+                      <input type="checkbox" id="checkbox-brand-3" />
+                      <label for="checkbox-brand-3">Terma</label>
+                    </div>
+                    <div class="aside__accord-checkbox">
+                      <input type="checkbox" id="checkbox-brand-4" />
+                      <label for="checkbox-brand-4">Loten</label>
+                    </div>
+                    <div class="aside__accord-checkbox">
+                      <input type="checkbox" id="checkbox-brand-5" />
+                      <label for="checkbox-brand-5">Guardo</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="aside__accord">
+                  <span class="aside__accord-title">
+                    Количество секций
+                    <img src="img/arrow-down.svg" alt="Стрелочка вниз" />
+                  </span>
+                  <div class="aside__accord-wrapper">
+                    <div class="aside__accord-checkbox">
+                      <input type="checkbox" id="checkbox-section-1" />
+                      <label for="checkbox-section-1">4</label>
+                    </div>
+                    <div class="aside__accord-checkbox">
+                      <input type="checkbox" id="checkbox-section-2" />
+                      <label for="checkbox-section-2">6</label>
+                    </div>
+                    <div class="aside__accord-checkbox">
+                      <input type="checkbox" id="checkbox-section-3" />
+                      <label for="checkbox-section-3">8</label>
+                    </div>
+                    <div class="aside__accord-checkbox">
+                      <input type="checkbox" id="checkbox-section-4" />
+                      <label for="checkbox-section-4">12</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="aside__accord">
+                  <span class="aside__accord-title">
+                    Межосетевое расстояние
+                    <img src="img/arrow-down.svg" alt="Стрелочка вниз" />
+                  </span>
+                  <div class="aside__accord-wrapper">
+                    <div class="aside__accord-checkbox">
+                      <input type="checkbox" id="checkbox-distance-1" />
+                      <label for="checkbox-distance-1">20 см</label>
+                    </div>
+                    <div class="aside__accord-checkbox">
+                      <input type="checkbox" id="checkbox-distance-2" />
+                      <label for="checkbox-distance-2">35 см</label>
+                    </div>
+                    <div class="aside__accord-checkbox">
+                      <input type="checkbox" id="checkbox-distance-3" />
+                      <label for="checkbox-distance-3">50 см</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="aside__accord">
+                  <span class="aside__accord-title">
+                    Площадь отопления
+                    <img src="img/arrow-down.svg" alt="Стрелочка вниз" />
+                  </span>
+                  <div class="aside__accord-wrapper">
+                    <div class="aside__accord-checkbox">
+                      <input type="checkbox" id="checkbox-area-1" />
+                      <label for="checkbox-area-1">Более 19 м² </label>
+                    </div>
+                    <div class="aside__accord-checkbox">
+                      <input type="checkbox" id="checkbox-area-2" />
+                      <label for="checkbox-area-2">Менее 8 м²</label>
+                    </div>
+                    <div class="aside__accord-checkbox">
+                      <input type="checkbox" id="checkbox-area-3" />
+                      <label for="checkbox-area-3">от 10 до 14 м²</label>
+                    </div>
+                    <div class="aside__accord-checkbox">
+                      <input type="checkbox" id="checkbox-area-4" />
+                      <label for="checkbox-area-4">от 15 до 26 м² </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="aside__accord">
+                  <span class="aside__accord-title">
+                    Цвет
+                    <img src="img/arrow-down.svg" alt="Стрелочка вниз" />
+                  </span>
+                  <div class="aside__accord-wrapper">
+                    <div class="aside__accord-checkbox">
+                      <input type="checkbox" id="checkbox-color-red" />
+                      <label for="checkbox-color-red">Красный</label>
+                    </div>
+                    <div class="aside__accord-checkbox">
+                      <input type="checkbox" id="checkbox-color-yellow" />
+                      <label for="checkbox-color-yellow">Желтый</label>
+                    </div>
+                    <div class="aside__accord-checkbox">
+                      <input type="checkbox" id="checkbox-color-green" />
+                      <label for="checkbox-color-green">Зеленый</label>
+                    </div>
+                    <div class="aside__accord-checkbox">
+                      <input type="checkbox" id="checkbox-color-blue" />
+                      <label for="checkbox-color-blue">Синий</label>
+                    </div>
+                    <div class="aside__accord-checkbox">
+                      <input type="checkbox" id="checkbox-color-purple" />
+                      <label for="checkbox-color-purple">Фиолетовый</label>
+                    </div>
+                    <div class="aside__accord-checkbox">
+                      <input type="checkbox" id="checkbox-color-pink" />
+                      <label for="checkbox-color-pink">Розовый</label>
+                    </div>
+                    <div class="aside__accord-checkbox">
+                      <input type="checkbox" id="checkbox-color-beige" />
+                      <label for="checkbox-color-beige">Бежевый</label>
+                    </div>
+                    <div class="aside__accord-checkbox">
+                      <input type="checkbox" id="checkbox-color-white" />
+                      <label for="checkbox-color-white">Белый</label>
+                    </div>
+                    <div class="aside__accord-checkbox">
+                      <input type="checkbox" id="checkbox-color-black" />
+                      <label for="checkbox-color-black">Черный</label>
+                    </div>
+                    <div class="aside__accord-checkbox">
+                      <input type="checkbox" id="checkbox-color-gray" />
+                      <label for="checkbox-color-gray">Серый</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="aside__accord-footer">
+                <button class="aside__accord-footer-button">
+                  <img src="img/more-mobile.svg" alt="Подробнее" />
+                  Подробнее
+                </button>
+                <span class="aside__header-reset"
+                  >Сбросить
+                  <img src="img/reset.svg" alt="Сбросить фильтры" />
+                </span>
+              </div>
+            </aside>
+            <div class="machinery__goods">
+              <div class="machinery__goods-title">
+                <span class="machinery__goods-counter">
+                  <span>2394</span> товаров
+                </span>
+                <span class="machinery__goods-counter-mobile">
+                  <img src="img/filter-mobile.svg" alt="Фильтр" />
+                  Фильтры
+                </span>
+                <span class="machinery__goods-cost">
+                  Цена: <span>По возрастанию</span>
+                  <img src="img/arrow-down.svg" alt="Стрелочка вниз" />
+                </span>
+                <span class="machinery__goods-cost-mobile">
+                  Сортировка
+                  <img src="img/arrow-down.svg" alt="Стрелочка вниз" />
+                </span>
+              </div>
+              <div class="machinery__cards">
+                <div class="machinery__card">
+                  <img
+                    class="machinery__card-image"
+                    src="img/radiator-1.jpg"
+                    alt="Радиатор"
+                  />
+                  <p class="machinery__card-title">
+                    Биметаллический радиатор Royal Thermo Indigo Super
+                  </p>
+                  <div class="machinery__card-info">
+                    <span class="machinery__card-cost"
+                      >4 250<sup><sup>₽</sup></sup></span
+                    >
+                    <button class="machinery__card-buy">
+                      <img
+                        src="img/shopping-bag.svg"
+                        alt="Добавить в корзину"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <div class="machinery__card machinery__card-sale">
+                  <div class="sale">
+                    <img src="img/percent.svg" alt="Акция" />
+                    <span>Акция</span>
+                  </div>
+                  <img
+                    class="machinery__card-image"
+                    src="img/radiator-2.jpg"
+                    alt="Радиатор"
+                  />
+                  <p class="machinery__card-title">
+                    Биметаллический радиатор Royal Thermo Indigo Super
+                  </p>
+                  <div class="machinery__card-info">
+                    <div class="machinery__card-costs">
+                      <span class="machinery__card-cost"
+                        >4 250<sup><sup>₽</sup></sup></span
+                      >
+                      <span class="machinery__card-cost-old"
+                        >5 890<sup><sup>₽</sup></sup></span
+                      >
+                    </div>
+                    <button class="machinery__card-buy">
+                      <img
+                        src="img/shopping-bag.svg"
+                        alt="Добавить в корзину"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <div class="machinery__card">
+                  <img
+                    class="machinery__card-image"
+                    src="img/radiator-3.jpg"
+                    alt="Радиатор"
+                  />
+                  <p class="machinery__card-title">
+                    Биметаллический радиатор Royal Thermo Indigo Super
+                  </p>
+                  <div class="machinery__card-info">
+                    <span class="machinery__card-cost"
+                      >4 250<sup><sup>₽</sup></sup></span
+                    >
+                    <button class="machinery__card-buy">
+                      <img
+                        src="img/shopping-bag.svg"
+                        alt="Добавить в корзину"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <div class="machinery__card">
+                  <img
+                    class="machinery__card-image"
+                    src="img/radiator-1.jpg"
+                    alt="Радиатор"
+                  />
+                  <p class="machinery__card-title">
+                    Биметаллический радиатор Royal Thermo Indigo Super
+                  </p>
+                  <div class="machinery__card-info">
+                    <span class="machinery__card-cost">4 250<sup>₽</sup></span>
+                    <button class="machinery__card-buy">
+                      <img
+                        src="img/shopping-bag.svg"
+                        alt="Добавить в корзину"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <div class="machinery__card machinery__card-sale">
+                  <div class="sale">
+                    <img src="img/percent.svg" alt="Акция" />
+                    <span>Акция</span>
+                  </div>
+                  <img
+                    class="machinery__card-image"
+                    src="img/radiator-2.jpg"
+                    alt="Радиатор"
+                  />
+                  <p class="machinery__card-title">
+                    Биметаллический радиатор Royal Thermo Indigo Super
+                  </p>
+                  <div class="machinery__card-info">
+                    <div class="machinery__card-costs">
+                      <span class="machinery__card-cost"
+                        >4 250<sup>₽</sup></span
+                      >
+                      <span class="machinery__card-cost-old"
+                        >5 890 <sup>₽</sup></span
+                      >
+                    </div>
+                    <button class="machinery__card-buy">
+                      <img
+                        src="img/shopping-bag.svg"
+                        alt="Добавить в корзину"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <div class="machinery__card">
+                  <img
+                    class="machinery__card-image"
+                    src="img/radiator-3.jpg"
+                    alt="Радиатор"
+                  />
+                  <p class="machinery__card-title">
+                    Биметаллический радиатор Royal Thermo Indigo Super
+                  </p>
+                  <div class="machinery__card-info">
+                    <span class="machinery__card-cost">4 250<sup>₽</sup></span>
+                    <button class="machinery__card-buy">
+                      <img
+                        src="img/shopping-bag.svg"
+                        alt="Добавить в корзину"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <div class="machinery__card">
+                  <img
+                    class="machinery__card-image"
+                    src="img/radiator-1.jpg"
+                    alt="Радиатор"
+                  />
+                  <p class="machinery__card-title">
+                    Биметаллический радиатор Royal Thermo Indigo Super
+                  </p>
+                  <div class="machinery__card-info">
+                    <span class="machinery__card-cost">4 250<sup>₽</sup></span>
+                    <button class="machinery__card-buy">
+                      <img
+                        src="img/shopping-bag.svg"
+                        alt="Добавить в корзину"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <div class="machinery__card machinery__card-sale">
+                  <div class="sale">
+                    <img src="img/percent.svg" alt="Акция" />
+                    <span>Акция</span>
+                  </div>
+                  <img
+                    class="machinery__card-image"
+                    src="img/radiator-2.jpg"
+                    alt="Радиатор"
+                  />
+                  <p class="machinery__card-title">
+                    Биметаллический радиатор Royal Thermo Indigo Super
+                  </p>
+                  <div class="machinery__card-info">
+                    <div class="machinery__card-costs">
+                      <span class="machinery__card-cost"
+                        >4 250<sup>₽</sup></span
+                      >
+                      <span class="machinery__card-cost-old"
+                        >5 890 <sup>₽</sup></span
+                      >
+                    </div>
+                    <button class="machinery__card-buy">
+                      <img
+                        src="img/shopping-bag.svg"
+                        alt="Добавить в корзину"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <div class="machinery__card">
+                  <img
+                    class="machinery__card-image"
+                    src="img/radiator-3.jpg"
+                    alt="Радиатор"
+                  />
+                  <p class="machinery__card-title">
+                    Биметаллический радиатор Royal Thermo Indigo Super
+                  </p>
+                  <div class="machinery__card-info">
+                    <span class="machinery__card-cost">4 250<sup>₽</sup></span>
+                    <button class="machinery__card-buy">
+                      <img
+                        src="img/shopping-bag.svg"
+                        alt="Добавить в корзину"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <div class="machinery__card">
+                  <img
+                    class="machinery__card-image"
+                    src="img/radiator-1.jpg"
+                    alt="Радиатор"
+                  />
+                  <p class="machinery__card-title">
+                    Биметаллический радиатор Royal Thermo Indigo Super
+                  </p>
+                  <div class="machinery__card-info">
+                    <span class="machinery__card-cost">4 250<sup>₽</sup></span>
+                    <button class="machinery__card-buy">
+                      <img
+                        src="img/shopping-bag.svg"
+                        alt="Добавить в корзину"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <div class="machinery__card machinery__card-sale">
+                  <div class="sale">
+                    <img src="img/percent.svg" alt="Акция" />
+                    <span>Акция</span>
+                  </div>
+                  <img
+                    class="machinery__card-image"
+                    src="img/radiator-2.jpg"
+                    alt="Радиатор"
+                  />
+                  <p class="machinery__card-title">
+                    Биметаллический радиатор Royal Thermo Indigo Super
+                  </p>
+                  <div class="machinery__card-info">
+                    <div class="machinery__card-costs">
+                      <span class="machinery__card-cost"
+                        >4 250<sup>₽</sup></span
+                      >
+                      <span class="machinery__card-cost-old"
+                        >5 890 <sup>₽</sup></span
+                      >
+                    </div>
+                    <button class="machinery__card-buy">
+                      <img
+                        src="img/shopping-bag.svg"
+                        alt="Добавить в корзину"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <div class="machinery__card">
+                  <img
+                    class="machinery__card-image"
+                    src="img/radiator-3.jpg"
+                    alt="Радиатор"
+                  />
+                  <p class="machinery__card-title">
+                    Биметаллический радиатор Royal Thermo Indigo Super
+                  </p>
+                  <div class="machinery__card-info">
+                    <span class="machinery__card-cost">4 250<sup>₽</sup></span>
+                    <button class="machinery__card-buy">
+                      <img
+                        src="img/shopping-bag.svg"
+                        alt="Добавить в корзину"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <div class="machinery__card">
+                  <img
+                    class="machinery__card-image"
+                    src="img/radiator-1.jpg"
+                    alt="Радиатор"
+                  />
+                  <p class="machinery__card-title">
+                    Биметаллический радиатор Royal Thermo Indigo Super
+                  </p>
+                  <div class="machinery__card-info">
+                    <span class="machinery__card-cost">4 250<sup>₽</sup></span>
+                    <button class="machinery__card-buy">
+                      <img
+                        src="img/shopping-bag.svg"
+                        alt="Добавить в корзину"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <div class="machinery__card machinery__card-sale">
+                  <div class="sale">
+                    <img src="img/percent.svg" alt="Акция" />
+                    <span>Акция</span>
+                  </div>
+                  <img
+                    class="machinery__card-image"
+                    src="img/radiator-2.jpg"
+                    alt="Радиатор"
+                  />
+                  <p class="machinery__card-title">
+                    Биметаллический радиатор Royal Thermo Indigo Super
+                  </p>
+                  <div class="machinery__card-info">
+                    <div class="machinery__card-costs">
+                      <span class="machinery__card-cost"
+                        >4 250<sup>₽</sup></span
+                      >
+                      <span class="machinery__card-cost-old"
+                        >5 890 <sup>₽</sup></span
+                      >
+                    </div>
+                    <button class="machinery__card-buy">
+                      <img
+                        src="img/shopping-bag.svg"
+                        alt="Добавить в корзину"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <div class="machinery__card">
+                  <img
+                    class="machinery__card-image"
+                    src="img/radiator-3.jpg"
+                    alt="Радиатор"
+                  />
+                  <p class="machinery__card-title">
+                    Биметаллический радиатор Royal Thermo Indigo Super
+                  </p>
+                  <div class="machinery__card-info">
+                    <span class="machinery__card-cost">4 250<sup>₽</sup></span>
+                    <button class="machinery__card-buy">
+                      <img
+                        src="img/shopping-bag.svg"
+                        alt="Добавить в корзину"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <a href="#" class="machinery__cards-all">Показать еще</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="text">
+        <span>Длинный или короткий заголовок SEO текста</span>
+        <p>
+          Интернет-магазин автоматической водосберегающей сантехники и дизайн
+          радиаторов отопления<br />
+          Сантехническое и отопительное оборудование - основные продукты
+          интернет-магазина "Экон Урфо".<br />
+          На сайте urfoecon.ru, вы можете выбрать и купить автоматическую
+          водосберегающую сантехнику и дизайн радиаторы отопления. На сайте
+          urfoecon.ru, вы можете выбрать: смесители, душевые, смывные устройства
+          для унитазов и писсуаров, а так же дополнительные товары: сушилки для
+          рук, дозаторы мыла, фены для волос, держатели туалетной бумаги, ведра
+          и другое.
+        </p>
+        <p>
+          Преимущества автоматической водосберегающей сантехники — экономия
+          денег и воды! Результат будет заметен с первого месяца установки.
+          Обратитесь к нашим специалистам и узнайте вашу выгоду при
+          использовании автоматической водосберегающей сантехники. Звоните или
+          оставляйте заявку на расчет.
+        </p>
+        <span>Подзаголовок внутри текста</span>
+        <p>
+          На сайте urfoecon.ru, вы можете выбрать красивые современные модели
+          радиаторов отопления Европейских и Российских производителей.
+          Радиаторы представленные в каталоге,изготовлены из прочных материалов:
+          сталь, алюминий и биметалл. Мы уверены в качестве нашей продукции и
+          предоставляем гарантию до 25 лет на радиаторы отопления. В нашем
+          ассортименте: водяные и электрические радиаторы, высокие, средние и
+          низкие, узкие и широкие, трубчатые и панельные модели, стандартные
+          белые, черные, бежевые и любые цвета по шкале RAL.
+        </p>
+        <p>
+          Обратитесь к нашим специалистам и подберите радиаторы, которые
+          гармонично впишутся в ваш интерьер и будут эффективно обогревать ваш
+          дом. Звоните или оставляйте заявку на расчет.
+        </p>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__contacts">
+            <a href="#" class="footer__contacts-logo">
+              <img src="img/logo.svg" alt="Логотип Экон Урфо" />
+            </a>
+            <span class="footer__contacts-phone">
+              <img src="img/phone-dark.svg" alt="Телефон" />
+              +7 (495) 506-36-50
+            </span>
+            <ul class="footer__contacts-list">
+              <li class="footer__contacts-list-item">
+                Пн-Пт: с 08:00 до 19:00
+              </li>
+              <li class="footer__contacts-list-item">
+                Сб-Вс: с 08:00 до 16:00
+              </li>
+            </ul>
+            <span class="footer__contacts-email">
+              <img src="img/mail-dark.svg" alt="Email" />
+              office@uconerfo.ru
+            </span>
+            <div class="footer__contacts-social">
+              <span class="footer__contacts-social-title">Мы в сети</span>
+              <div class="footer__contacts-social-wrapper">
+                <div class="footer__contacts-social-vk">
+                  <img src="img/vk.svg" alt="ВКонтакте" />
+                  <span>ВКонтакте</span>
+                </div>
+                <div class="footer__contacts-social-instagram">
+                  <img src="img/instagram.svg" alt="instagram" />
+                  <span>Instagram</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__lists">
+            <div class="footer__lists-wrapper">
+              <span class="footer__lists-title">Категории продукции</span>
+              <ul class="footer__list">
+                <li class="footer__list-item">Трубчатые радиаторы</li>
+                <li class="footer__list-item">Панельные радиаторы</li>
+                <li class="footer__list-item">Полотенцесушители</li>
+                <li class="footer__list-item">Вертикальные радиаторы</li>
+                <li class="footer__list-item">Дизайн радиаторы</li>
+                <li class="footer__list-item">Внутрипольные конвекторы</li>
+                <li class="footer__list-item">Конвекторы водяные</li>
+                <li class="footer__list-item">Водосберегающая сантехника</li>
+                <li class="footer__list-item">Теплый пол</li>
+                <li class="footer__list-item">Чугунные дизайн радиаторы</li>
+                <li class="footer__list-item">Арматура для радиаторов</li>
+              </ul>
+            </div>
+            <div class="footer__lists-wrapper">
+              <span class="footer__lists-title">Категории продукции</span>
+              <ul class="footer__list">
+                <li class="footer__list-item">Трубчатые радиаторы</li>
+                <li class="footer__list-item">Панельные радиаторы</li>
+                <li class="footer__list-item">Полотенцесушители</li>
+                <li class="footer__list-item">Вертикальные радиаторы</li>
+                <li class="footer__list-item">Дизайн радиаторы</li>
+                <li class="footer__list-item">Внутрипольные конвекторы</li>
+                <li class="footer__list-item">Конвекторы водяные</li>
+                <li class="footer__list-item">Водосберегающая сантехника</li>
+                <li class="footer__list-item">Теплый пол</li>
+                <li class="footer__list-item">Чугунные дизайн радиаторы</li>
+                <li class="footer__list-item">Арматура для радиаторов</li>
+              </ul>
+            </div>
+            <div class="footer__lists-wrapper">
+              <span class="footer__lists-title">Информация</span>
+              <ul class="footer__list">
+                <li class="footer__list-item">О компании</li>
+                <li class="footer__list-item">Готовые решения</li>
+                <li class="footer__list-item">Наша продукция</li>
+                <li class="footer__list-item">Цвета</li>
+                <li class="footer__list-item">Сертификаты</li>
+                <li class="footer__list-item">Доставка и оплата</li>
+                <li class="footer__list-item">Контакты</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__end">
+          <span class="footer__end-copyright">Copyright © 2014 - 2020</span>
+          <span class="footer__end-confident">Политика конфиденциальности</span>
+          <span class="footer__end-personal"
+            >Обработка персональной информации</span
+          >
+          <span class="footer__end-design">
+            <span>Разработано</span>
+            <img src="img/request-design.svg" alt="Request Design" />
+          </span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
